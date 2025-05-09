@@ -18,4 +18,5 @@ USER odoo
 EXPOSE 8069
 
 # Comando para iniciar
-CMD ["odoo", "-c", "/etc/odoo/odoo.conf"]
+CMD ["odoo", "-d", "odoo_db_franye", "-i", "base", "--without-demo=all", "--db_user=odoo_db_franye_user", "--db_password=o4tQVk3jRRTAbeveyJJzTvLE23Zc1OaS", "--db_host=dpg-d0f3hapr0fns73cq90fg-a", "--db_port=5432"]
+
